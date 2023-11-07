@@ -11,10 +11,7 @@ const routes = {
 navigate();
 
 // A hash változását figyeljük, és frissítjük a tartalmat
-window.addEventListener("hashchange", () => {
-  console.log(window.location.hash);
-  navigate();
-});
+window.addEventListener("hashchange", () => navigate());
 
 
 // A megfelelő oldalt jelenítjük meg a hash alapján
